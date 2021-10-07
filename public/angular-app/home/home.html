@@ -1,10 +1,11 @@
+ <div class="card border-primary mb-3 mt-3" style="max-width: 40rem; margin-left: 10px;">
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center" ng-repeat="item in vm.items | orderBy: 'item' ">
+           <a ng-href="#!/item/{{item._id}}"> {{item.item}}</a>
+          <span class="badge bg-primary rounded-pill">{{item.price}}</span>
+        </li>
+        
+      </ul>
+</div> 
 
-<div class="card border-primary mb-3 mt-3" ">
-    <div class="card-header">Welcome To Shopping-App</div>
-    <div class="card-body">
-      <h4 class="card-title">{{vm.title}}</h4>
-      <ul>
-        <li ng-repeat='item in vm.items'>{{item.item}}</li>
-    </ul>
-    </div>
-  </div>
+

@@ -6,7 +6,7 @@ const app = express();
 require('./api/db/dbconnection');
 
 app.use(express.static(path.join(__dirname,'public')));
-app.use(express.static(path.join(__dirname,'node_modules')))
+app.use(express.static(path.join(__dirname,'node_modules')));
 
 const shoppingRoutes = require('./api/routes/itemRoute');
 

@@ -6,8 +6,7 @@ const specsController = require('../controller/itemSpecsCTRL')
 
 router.route('/')
     .get(controller.getAll)
-    .post(controller.addOne)
-
+    .post(controller.addOne);
 
 router.route('/:id')
     .get(controller.getOne)
@@ -20,5 +19,4 @@ router.route('/:id/specs')
     .delete(specsController.deleteOne)
     .put(specsController.updateOne);
     
-
 module.exports = router;
